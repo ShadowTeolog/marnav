@@ -104,6 +104,8 @@ namespace
 	}
 
 struct entry {
+	entry(const char * tag,const sentence_id id,const sentence::parse_function parse_source) :TAG(tag), ID(id),parse(parse_source)
+	{}
 	const char * TAG;
 	const sentence_id ID;
 	const sentence::parse_function parse;
