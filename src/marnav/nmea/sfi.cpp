@@ -1,5 +1,5 @@
 #include "sfi.hpp"
-#include <marnav/nmea/io.hpp>
+#include "io.hpp"
 
 namespace marnav
 {

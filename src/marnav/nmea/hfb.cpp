@@ -1,6 +1,6 @@
 #include "hfb.hpp"
-#include <marnav/nmea/io.hpp>
-#include <marnav/utils/unique.hpp>
+#include "io.hpp"
+#include "../utils/unique.hpp"
 
 namespace marnav
 {

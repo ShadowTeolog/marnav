@@ -1,6 +1,6 @@
 #include "nmea_reader.hpp"
 #include <algorithm>
-#include <marnav/utils/unique.hpp>
+#include "../utils/unique.hpp"
 
 namespace marnav
 {

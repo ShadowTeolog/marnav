@@ -1,6 +1,6 @@
 #include "sentence.hpp"
 #include <algorithm>
-#include <marnav/nmea/checksum.hpp>
+#include "checksum.hpp"
 
 namespace marnav
 {

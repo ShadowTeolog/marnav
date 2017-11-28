@@ -1,6 +1,6 @@
 #include "binary_001_11.hpp"
 #include <cmath>
-#include <marnav/ais/angle.hpp>
+#include "angle.hpp"
 
 /// @todo binary_001_11: Range checks for setters
 

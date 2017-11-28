@@ -1,7 +1,7 @@
 #include "manufacturer.hpp"
 #include <algorithm>
 #include <vector>
-#include <marnav/nmea/sentence.hpp>
+#include "sentence.hpp"
 
 namespace marnav
 {

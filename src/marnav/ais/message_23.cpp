@@ -1,7 +1,7 @@
 #include "message_23.hpp"
 #include <algorithm>
 #include <cmath>
-#include <marnav/ais/angle.hpp>
+#include "angle.hpp"
 
 namespace marnav
 {

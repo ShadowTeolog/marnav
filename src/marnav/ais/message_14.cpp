@@ -1,5 +1,5 @@
 #include "message_14.hpp"
-
+#include <algorithm>
 namespace marnav
 {
 namespace ais
