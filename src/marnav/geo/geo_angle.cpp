@@ -1,7 +1,7 @@
 #include "angle.hpp"
 #include <cmath>
 #include <stdexcept>
-#include <marnav/math/floatingpoint.hpp>
+#include "../math/floatingpoint.hpp"
 
 namespace marnav
 {
