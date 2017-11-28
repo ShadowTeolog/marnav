@@ -1,6 +1,6 @@
 #include "rmb.hpp"
-#include <marnav/nmea/io.hpp>
-#include <marnav/nmea/convert.hpp>
+#include "io.hpp"
+#include "convert.hpp"
 
 namespace marnav
 {

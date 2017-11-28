@@ -1,6 +1,6 @@
 #include "gsv.hpp"
 #include <algorithm>
-#include <marnav/nmea/io.hpp>
+#include "io.hpp"
 
 namespace marnav
 {

@@ -1,5 +1,6 @@
 #include "region.hpp"
 #include <stdexcept>
+#define _USE_MATH_DEFINES
 #include <cmath>
 
 namespace marnav

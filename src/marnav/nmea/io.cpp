@@ -1,10 +1,10 @@
 #include "io.hpp"
-#include <marnav/nmea/angle.hpp>
-#include <marnav/nmea/date.hpp>
-#include <marnav/nmea/time.hpp>
-#include <marnav/nmea/waypoint.hpp>
-#include <marnav/utils/mmsi.hpp>
-#include <marnav/utils/unused.hpp>
+#include "angle.hpp"
+#include "date.hpp"
+#include "time.hpp"
+#include "waypoint.hpp"
+#include "../utils/mmsi.hpp"
+#include "../utils/unused.hpp"
 
 namespace marnav
 {

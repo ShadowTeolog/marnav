@@ -2,9 +2,9 @@
 #include <algorithm>
 #include <stdexcept>
 #include <type_traits>
-#include <marnav/nmea/checksum.hpp>
-#include <marnav/nmea/detail.hpp>
-#include <marnav/nmea/split.hpp>
+#include "checksum.hpp"
+#include "detail.hpp"
+#include "split.hpp"
 
 namespace marnav
 {

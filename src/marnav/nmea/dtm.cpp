@@ -1,6 +1,6 @@
 #include "dtm.hpp"
-#include <marnav/nmea/checks.hpp>
-#include <marnav/nmea/io.hpp>
+#include "checks.hpp"
+#include "io.hpp"
 
 namespace marnav
 {

@@ -1,6 +1,8 @@
 #include "cpa.hpp"
+#define _USE_MATH_DEFINES
 #include <cmath>
-#include <marnav/math/vector.hpp>
+
+#include "../math/vector.hpp"
 
 namespace marnav
 {

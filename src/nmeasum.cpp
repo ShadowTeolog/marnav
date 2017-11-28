@@ -3,7 +3,7 @@
 #include <cstdint>
 #include <cstring>
 #include <algorithm>
-#include <marnav/nmea/checksum.hpp>
+#include "marnav/nmea/checksum.hpp"
 
 int main(int argc, char ** argv)
 {

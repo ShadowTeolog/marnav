@@ -1,5 +1,5 @@
 #include "message_24.hpp"
-#include <marnav/utils/mmsi.hpp>
+#include "../utils/mmsi.hpp"
 
 namespace marnav
 {

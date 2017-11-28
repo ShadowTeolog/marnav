@@ -1,7 +1,7 @@
 #include "mmsi_country.hpp"
 #include <algorithm>
 #include <vector>
-#include <marnav/utils/mmsi.hpp>
+#include "mmsi.hpp"
 
 namespace marnav
 {

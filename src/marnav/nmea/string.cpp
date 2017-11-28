@@ -1,5 +1,5 @@
 #include "string.hpp"
-#include <marnav/utils/mmsi.hpp>
+#include "../utils/mmsi.hpp"
 
 namespace marnav
 {
