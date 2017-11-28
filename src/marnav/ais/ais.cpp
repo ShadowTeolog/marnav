@@ -95,6 +95,10 @@ static std::function<std::unique_ptr<message>(const raw &)> instantiate_message(
 	}
 
 	struct entry {
+		entry(const message_id parse_id, const std::function<std::unique_ptr<message>(const raw &)> parse_source) :id(parse_id), parse(parse_source)
+		{
+
+		}
 		const message_id id;
 		const std::function<std::unique_ptr<message>(const raw &)> parse;
 	};
