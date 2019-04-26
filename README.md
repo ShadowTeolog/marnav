@@ -7,6 +7,11 @@ Copyright (c) 2018 Mario Konrad (mario.konrad@gmx.net)
 
 Abstract
 --------
+This is compatibility fork of original mariokonrad/marnav C++ library, for use it on Windows with Visual Studio compiler.
+This made for internal use, but placed here in case to be useful for someone.
+This repository keep only compatibility fixes and no over improvement,
+so with functional change requests better go to autor of original library.
+	
 
 This is a C++ library for **MAR**itime **NAV**igation purposes.
 
@@ -518,20 +523,7 @@ Links
 
 A (non-complete) collection of resources from where information was gathered.
 
-- [NMEA Revealed](http://www.catb.org/gpsd/NMEA.html) (by Eric S. Raymond)
-- [NMEA FAQ](http://www.kh-gps.de/nmea.faq)
-- [it-digin's blog](http://www.it-digin.com/blog/?cat=4)
-- [AIVDM/AIVDO Protocol decoding](http://www.catb.org/gpsd/AIVDM.html) (by Eric S. Raymond)
-- [DSC Position Request](http://www.thehulltruth.com/marine-electronics-forum/43945-dsc-position-request.html)
-- [NMEA-0183 Sentences DSC,DSE](http://www.cruisersforum.com/forums/f13/nmea-0183-sentences-dsc-dse-124887.html)
-- [SerialMon - NMEA 0183 Protocol](http://www.serialmon.com/protocols/nmea0183.html)
-- [SeaTalk Reference](http://thomasknauf.de/seatalk.htm) (by Thomas Knauf)
-- [Navigation Center - AIS Standard Class B Equipment Position Report](http://www.navcen.uscg.gov/?pageName=AISMessagesB)
-- [GPS Forums](http://www.gps-forums.net)
-- [NMEA Datensaetze](http://www.nmea.de/nmea0183datensaetze.html)
-- [AIS VDM & VDO Message Decoder](http://www.maritec.co.za/tools/aisvdmvdodecoding/)
 
----
 
 LICENSE
 -------
