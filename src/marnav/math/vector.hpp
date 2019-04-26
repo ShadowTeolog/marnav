@@ -2,11 +2,11 @@
 #define MARNAV__MATH__VECTOR__HPP
 #define _USE_MATH_DEFINES
 #include <cmath>
-#define M_PI       3.141592653589793238 //иди на хуй майкрософт 
-#include "./floatingpoint.hpp"
 #include <initializer_list>
 #include <type_traits>
-#include <./constants.hpp>
+#define M_PI       3.141592653589793238 //иди на хуй майкрософт 
+#include "./floatingpoint.hpp"
+#include "./constants.hpp"
 namespace marnav
 {
 namespace math

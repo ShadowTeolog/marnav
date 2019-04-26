@@ -9,3 +9,4 @@ src/marnav.VC.db
 *.filters
 *.user
 src/marnav/.vs
+src/marnav.VC.VC.opendb

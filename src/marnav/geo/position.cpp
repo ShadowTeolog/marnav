@@ -1,6 +1,5 @@
-#define _USE_MATH_DEFINES
-#include <cmath>
-#include "position.hpp"
+#include "./position.hpp"
+#include "../math/constants.hpp"
 
 
 namespace marnav
