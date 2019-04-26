@@ -1,9 +1,9 @@
 #ifndef MARNAV__NMEA__WCV__HPP
 #define MARNAV__NMEA__WCV__HPP
 
-#include <marnav/nmea/sentence.hpp>
-#include <marnav/nmea/waypoint.hpp>
-#include <marnav/utils/optional.hpp>
+#include "sentence.hpp"
+#include "waypoint.hpp"
+#include "../utils/optional.hpp"
 
 namespace marnav
 {

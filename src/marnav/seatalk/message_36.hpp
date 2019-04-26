@@ -1,7 +1,7 @@
 #ifndef MARNAV__SEATALK__MESSAGE_36__HPP
 #define MARNAV__SEATALK__MESSAGE_36__HPP
 
-#include <marnav/seatalk/message.hpp>
+#include "message.hpp"
 
 namespace marnav
 {

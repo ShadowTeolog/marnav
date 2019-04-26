@@ -1,8 +1,8 @@
 #ifndef MARNAV__IO__DEFAULT_NMEA_SERIAL__HPP
 #define MARNAV__IO__DEFAULT_NMEA_SERIAL__HPP
 
-#include <marnav/io/serial.hpp>
-#include <marnav/utils/unique.hpp>
+#include "serial.hpp"
+#include "../utils/unique.hpp"
 
 namespace marnav
 {

@@ -1,10 +1,10 @@
 #ifndef MARNAV__AIS__MESSAGE_04__HPP
 #define MARNAV__AIS__MESSAGE_04__HPP
 
-#include <marnav/ais/message.hpp>
-#include <marnav/geo/angle.hpp>
-#include <marnav/utils/mmsi.hpp>
-#include <marnav/utils/optional.hpp>
+#include "message.hpp"
+#include "../geo/angle.hpp"
+#include "../utils/mmsi.hpp"
+#include "../utils/optional.hpp"
 
 namespace marnav
 {

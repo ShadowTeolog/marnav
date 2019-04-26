@@ -1,11 +1,12 @@
-#ifndef MARNAV__MATH__VECTOR__HPP
+﻿#ifndef MARNAV__MATH__VECTOR__HPP
 #define MARNAV__MATH__VECTOR__HPP
-
+#define _USE_MATH_DEFINES
+#include <cmath>
+#define M_PI       3.141592653589793238 //иди на хуй майкрософт 
+#include "./floatingpoint.hpp"
 #include <initializer_list>
 #include <type_traits>
-#include <marnav/math/floatingpoint.hpp>
-#include <marnav/math/constants.hpp>
-
+#include <./constants.hpp>
 namespace marnav
 {
 namespace math
@@ -144,34 +145,36 @@ public:
 
 	inline bool operator!=(const vector2 & v) const { return !(*this == v); }
 
-	inline vector2 & operator+=(const vector2 & v)
+	inline vector2 & operator+=(const vector2 & v) 
 	{
 		for (size_type i = 0; i < dimension; ++i)
 			a[i] += v.a[i];
 		return *this;
 	}
 
-	inline vector2 & operator-=(const vector2 & v)
+	inline vector2 & operator-=(const vector2 & v)  
 	{
 		for (size_type i = 0; i < dimension; ++i)
 			a[i] -= v.a[i];
 		return *this;
 	}
 
-	inline vector2 & operator*=(value_type f)
+	inline vector2 & operator*=(value_type f)  
 	{
 		for (size_type i = 0; i < dimension; ++i)
 			a[i] *= f;
 		return *this;
 	}
 
-	friend vector2 operator+(const vector2 & w, const vector2 & v) { return vector2{w} += v; }
+	friend vector2 operator+(const vector2 & w, const vector2 & v) {
+		return vector2(w) += v;
+	}
 
-	friend vector2 operator-(const vector2 & w, const vector2 & v) { return vector2{w} -= v; }
+	friend vector2 operator-(const vector2 & w, const vector2 & v) { return vector2(w) -= v; }
 
-	friend vector2 operator*(const vector2 & v, value_type f) { return vector2{v} *= f; }
+	friend vector2 operator*(const vector2 & v, value_type f) { return vector2(v) *= f; }
 
-	friend vector2 operator*(value_type f, const vector2 & v) { return vector2{v} *= f; }
+	friend vector2 operator*(value_type f, const vector2 & v) { return vector2(v) *= f; }
 
 	friend value_type operator*(const vector2 & a, const vector2 & b) { return a.dot(b); }
 

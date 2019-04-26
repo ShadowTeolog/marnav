@@ -1,9 +1,9 @@
 #ifndef MARNAV__NMEA__RMA__HPP
 #define MARNAV__NMEA__RMA__HPP
 
-#include <marnav/nmea/sentence.hpp>
-#include <marnav/nmea/angle.hpp>
-#include <marnav/utils/optional.hpp>
+#include "sentence.hpp"
+#include "angle.hpp"
+#include "../utils/optional.hpp"
 
 namespace marnav
 {

@@ -1,8 +1,8 @@
 #ifndef MARNAV__AIS__MESSAGE_14__HPP
 #define MARNAV__AIS__MESSAGE_14__HPP
 
-#include <marnav/ais/message.hpp>
-#include <marnav/utils/mmsi.hpp>
+#include "message.hpp"
+#include "../utils/mmsi.hpp"
 
 namespace marnav
 {

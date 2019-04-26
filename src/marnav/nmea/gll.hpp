@@ -1,10 +1,10 @@
 #ifndef MARNAV__NMEA__GLL__HPP
 #define MARNAV__NMEA__GLL__HPP
 
-#include <marnav/nmea/sentence.hpp>
-#include <marnav/nmea/angle.hpp>
-#include <marnav/nmea/time.hpp>
-#include <marnav/utils/optional.hpp>
+#include "sentence.hpp"
+#include "angle.hpp"
+#include "time.hpp"
+#include "../utils/optional.hpp"
 
 namespace marnav
 {

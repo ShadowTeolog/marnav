@@ -1,7 +1,7 @@
 #ifndef MARNAV__GEO__REGION__HPP
 #define MARNAV__GEO__REGION__HPP
 
-#include <marnav/geo/position.hpp>
+#include "position.hpp"
 
 namespace marnav
 {

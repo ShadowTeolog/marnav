@@ -1,12 +1,11 @@
 #ifndef MARNAV__AIS__MESSAGE_01__HPP
 #define MARNAV__AIS__MESSAGE_01__HPP
 
-#include <marnav/ais/message.hpp>
-#include <marnav/ais/rate_of_turn.hpp>
-#include <marnav/geo/angle.hpp>
-#include <marnav/utils/mmsi.hpp>
-#include <marnav/utils/optional.hpp>
-
+#include "message.hpp"
+#include "../geo/angle.hpp"
+#include "../utils/mmsi.hpp"
+#include "../utils/optional.hpp"
+#include "rate_of_turn.hpp"
 namespace marnav
 {
 namespace ais

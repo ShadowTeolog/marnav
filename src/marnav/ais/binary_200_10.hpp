@@ -1,7 +1,7 @@
 #ifndef MARNAV__AIS__BINARY_200_10__HPP
 #define MARNAV__AIS__BINARY_200_10__HPP
 
-#include <marnav/ais/binary_data.hpp>
+#include "binary_data.hpp"
 
 namespace marnav
 {

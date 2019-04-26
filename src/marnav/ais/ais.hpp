@@ -3,7 +3,7 @@
 
 #include <vector>
 #include <stdexcept>
-#include <marnav/ais/message.hpp>
+#include "message.hpp"
 
 namespace marnav
 {

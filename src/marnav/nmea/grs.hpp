@@ -2,9 +2,9 @@
 #define MARNAV__NMEA__GRS__HPP
 
 #include <array>
-#include <marnav/nmea/sentence.hpp>
-#include <marnav/nmea/time.hpp>
-#include <marnav/utils/optional.hpp>
+#include "sentence.hpp"
+#include "time.hpp"
+#include "../utils/optional.hpp"
 
 namespace marnav
 {

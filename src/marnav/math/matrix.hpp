@@ -1,8 +1,8 @@
 #ifndef MARNAV__MATH__MATRIX__HPP
 #define MARNAV__MATH__MATRIX__HPP
 
-#include <marnav/math/vector.hpp>
-#include <marnav/math/floatingpoint.hpp>
+#include "marnav/math/vector.hpp"
+#include "marnav/math/floatingpoint.hpp"
 
 namespace marnav
 {

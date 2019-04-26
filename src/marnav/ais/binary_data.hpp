@@ -2,7 +2,7 @@
 #define MARNAV__AIS__BINARY_DATA__HPP
 
 #include <string>
-#include <marnav/utils/bitset.hpp>
+#include "../utils/bitset.hpp"
 
 namespace marnav
 {

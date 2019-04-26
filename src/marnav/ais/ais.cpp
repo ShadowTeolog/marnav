@@ -89,12 +89,7 @@ static raw collect(const std::vector<std::pair<std::string, uint32_t>> & v)
 static std::function<std::unique_ptr<message>(const raw &)> instantiate_message(
 	message_id type, size_t size)
 {
-#define REGISTER_MESSAGE(m)              \
-	{                                    \
-		m::ID, detail::factory::parse<m> \
-	}
-
-struct entry {
+	struct entry {
 		entry(const message_id parse_id, const std::function<std::unique_ptr<message>(const raw &)> parse_source) :id(parse_id), parse(parse_source)
 		{
 
@@ -102,6 +97,14 @@ struct entry {
 		const message_id id;
 		const std::function<std::unique_ptr<message>(const raw &)> parse;
 	};
+
+	
+#define REGISTER_MESSAGE(m)              \
+	{                                    \
+		m::ID, detail::factory::parse<m> \
+	}
+
+	
 
 	static const std::vector<entry> known_messages = {
 		REGISTER_MESSAGE(message_01), REGISTER_MESSAGE(message_02),
@@ -114,7 +117,7 @@ struct entry {
 		REGISTER_MESSAGE(message_17), REGISTER_MESSAGE(message_18),
 		REGISTER_MESSAGE(message_19), REGISTER_MESSAGE(message_20),
 		REGISTER_MESSAGE(message_21), REGISTER_MESSAGE(message_22),
-		REGISTER_MESSAGE(message_23), REGISTER_MESSAGE(message_24),
+		REGISTER_MESSAGE(message_23), REGISTER_MESSAGE(message_24)
 	};
 
 #undef REGISTER_MESSAGE

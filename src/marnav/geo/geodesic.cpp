@@ -2,6 +2,7 @@
 #define _USE_MATH_DEFINES
 #include <cmath>
 
+
 namespace marnav
 {
 namespace geo

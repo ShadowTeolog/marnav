@@ -1,8 +1,8 @@
 #ifndef MARNAV__SEATALK__MESSAGE_01__HPP
 #define MARNAV__SEATALK__MESSAGE_01__HPP
 
-#include <marnav/seatalk/message.hpp>
-#include <marnav/seatalk/equipment.hpp>
+#include "message.hpp"
+#include "equipment.hpp"
 
 namespace marnav
 {

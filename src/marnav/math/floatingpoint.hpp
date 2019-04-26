@@ -1,7 +1,8 @@
 #ifndef MARNAV__MATH__FLOATINGPOINT__HPP
 #define MARNAV__MATH__FLOATINGPOINT__HPP
-
+#define _USE_MATH_DEFINES
 #include <cmath>
+
 #include <limits>
 #include <type_traits>
 

@@ -4,9 +4,9 @@
 #include <algorithm>
 #include <stdexcept>
 #include <string>
-#include <marnav/nmea/constants.hpp>
-#include <marnav/nmea/string.hpp>
-#include <marnav/utils/optional.hpp>
+#include "constants.hpp"
+#include "string.hpp"
+#include "../utils/optional.hpp"
 
 namespace marnav
 {

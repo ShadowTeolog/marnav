@@ -5,8 +5,8 @@
 #include <tuple>
 #include <type_traits>
 #include <vector>
-#include <marnav/nmea/talker_id.hpp>
-#include <marnav/nmea/checksum_enum.hpp>
+#include "talker_id.hpp"
+#include "checksum_enum.hpp"
 
 namespace marnav
 {

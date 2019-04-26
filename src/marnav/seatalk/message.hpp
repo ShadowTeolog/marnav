@@ -4,7 +4,7 @@
 #include <vector>
 #include <functional>
 #include <typeinfo>
-#include <marnav/utils/unique.hpp>
+#include "../utils/unique.hpp"
 
 namespace marnav
 {

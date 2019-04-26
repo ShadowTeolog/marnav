@@ -2,7 +2,7 @@
 #define MARNAV__IO__SERIAL__HPP
 
 #include <string>
-#include <marnav/io/device.hpp>
+#include "device.hpp"
 
 namespace marnav
 {

@@ -1,0 +1,511 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EA08F425-FF2C-4880-8548-B916E977E1D0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>marnav</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;MARNAV_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;MARNAV_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MinSpace</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;MARNAV_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;MARNAV_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="marnav\ais\ais.cpp" />
+    <ClCompile Include="marnav\ais\ais_angle.cpp" />
+    <ClCompile Include="marnav\ais\binary_001_11.cpp" />
+    <ClCompile Include="marnav\ais\binary_200_10.cpp" />
+    <ClCompile Include="marnav\ais\binary_data.cpp" />
+    <ClCompile Include="marnav\ais\message_01.cpp" />
+    <ClCompile Include="marnav\ais\message_02.cpp" />
+    <ClCompile Include="marnav\ais\message_03.cpp" />
+    <ClCompile Include="marnav\ais\message_04.cpp" />
+    <ClCompile Include="marnav\ais\message_05.cpp" />
+    <ClCompile Include="marnav\ais\message_06.cpp" />
+    <ClCompile Include="marnav\ais\message_07.cpp" />
+    <ClCompile Include="marnav\ais\message_08.cpp" />
+    <ClCompile Include="marnav\ais\message_09.cpp" />
+    <ClCompile Include="marnav\ais\message_10.cpp" />
+    <ClCompile Include="marnav\ais\message_11.cpp" />
+    <ClCompile Include="marnav\ais\message_12.cpp" />
+    <ClCompile Include="marnav\ais\message_13.cpp" />
+    <ClCompile Include="marnav\ais\message_14.cpp" />
+    <ClCompile Include="marnav\ais\message_17.cpp" />
+    <ClCompile Include="marnav\ais\message_18.cpp" />
+    <ClCompile Include="marnav\ais\message_19.cpp" />
+    <ClCompile Include="marnav\ais\message_20.cpp" />
+    <ClCompile Include="marnav\ais\message_21.cpp" />
+    <ClCompile Include="marnav\ais\message_22.cpp" />
+    <ClCompile Include="marnav\ais\message_23.cpp" />
+    <ClCompile Include="marnav\ais\message_24.cpp" />
+    <ClCompile Include="marnav\ais\name.cpp" />
+    <ClCompile Include="marnav\geo\geo_angle.cpp" />
+    <ClCompile Include="marnav\geo\cpa.cpp" />
+    <ClCompile Include="marnav\geo\geodesic.cpp" />
+    <ClCompile Include="marnav\geo\position.cpp" />
+    <ClCompile Include="marnav\geo\region.cpp" />
+    <ClCompile Include="marnav\io\default_nmea_reader.cpp" />
+    <ClCompile Include="marnav\io\default_seatalk_reader.cpp" />
+    <ClCompile Include="marnav\io\nmea_reader.cpp" />
+    <ClCompile Include="marnav\io\seatalk_reader.cpp" />
+    <ClCompile Include="marnav\io\serial.cpp" />
+    <ClCompile Include="marnav\nmea\aam.cpp" />
+    <ClCompile Include="marnav\nmea\ais_helper.cpp" />
+    <ClCompile Include="marnav\nmea\alm.cpp" />
+    <ClCompile Include="marnav\nmea\nmea_angle.cpp" />
+    <ClCompile Include="marnav\nmea\apa.cpp" />
+    <ClCompile Include="marnav\nmea\apb.cpp" />
+    <ClCompile Include="marnav\nmea\bod.cpp" />
+    <ClCompile Include="marnav\nmea\bwc.cpp" />
+    <ClCompile Include="marnav\nmea\bwr.cpp" />
+    <ClCompile Include="marnav\nmea\bww.cpp" />
+    <ClCompile Include="marnav\nmea\checks.cpp" />
+    <ClCompile Include="marnav\nmea\checksum.cpp" />
+    <ClCompile Include="marnav\nmea\convert.cpp" />
+    <ClCompile Include="marnav\nmea\date.cpp" />
+    <ClCompile Include="marnav\nmea\dbk.cpp" />
+    <ClCompile Include="marnav\nmea\dbt.cpp" />
+    <ClCompile Include="marnav\nmea\detail.cpp" />
+    <ClCompile Include="marnav\nmea\dpt.cpp" />
+    <ClCompile Include="marnav\nmea\dsc.cpp" />
+    <ClCompile Include="marnav\nmea\dse.cpp" />
+    <ClCompile Include="marnav\nmea\dtm.cpp" />
+    <ClCompile Include="marnav\nmea\fsi.cpp" />
+    <ClCompile Include="marnav\nmea\gbs.cpp" />
+    <ClCompile Include="marnav\nmea\gga.cpp" />
+    <ClCompile Include="marnav\nmea\glc.cpp" />
+    <ClCompile Include="marnav\nmea\gll.cpp" />
+    <ClCompile Include="marnav\nmea\gns.cpp" />
+    <ClCompile Include="marnav\nmea\grs.cpp" />
+    <ClCompile Include="marnav\nmea\gsa.cpp" />
+    <ClCompile Include="marnav\nmea\gst.cpp" />
+    <ClCompile Include="marnav\nmea\gsv.cpp" />
+    <ClCompile Include="marnav\nmea\gtd.cpp" />
+    <ClCompile Include="marnav\nmea\hdg.cpp" />
+    <ClCompile Include="marnav\nmea\hdm.cpp" />
+    <ClCompile Include="marnav\nmea\hdt.cpp" />
+    <ClCompile Include="marnav\nmea\hfb.cpp" />
+    <ClCompile Include="marnav\nmea\hsc.cpp" />
+    <ClCompile Include="marnav\nmea\io.cpp" />
+    <ClCompile Include="marnav\nmea\its.cpp" />
+    <ClCompile Include="marnav\nmea\lcd.cpp" />
+    <ClCompile Include="marnav\nmea\manufacturer.cpp" />
+    <ClCompile Include="marnav\nmea\msk.cpp" />
+    <ClCompile Include="marnav\nmea\mss.cpp" />
+    <ClCompile Include="marnav\nmea\mtw.cpp" />
+    <ClCompile Include="marnav\nmea\mwd.cpp" />
+    <ClCompile Include="marnav\nmea\mwv.cpp" />
+    <ClCompile Include="marnav\nmea\nmea_name.cpp" />
+    <ClCompile Include="marnav\nmea\nmea.cpp" />
+    <ClCompile Include="marnav\nmea\osd.cpp" />
+    <ClCompile Include="marnav\nmea\pgrme.cpp" />
+    <ClCompile Include="marnav\nmea\pgrmm.cpp" />
+    <ClCompile Include="marnav\nmea\pgrmz.cpp" />
+    <ClCompile Include="marnav\nmea\r00.cpp" />
+    <ClCompile Include="marnav\nmea\rma.cpp" />
+    <ClCompile Include="marnav\nmea\rmb.cpp" />
+    <ClCompile Include="marnav\nmea\rmc.cpp" />
+    <ClCompile Include="marnav\nmea\rot.cpp" />
+    <ClCompile Include="marnav\nmea\rpm.cpp" />
+    <ClCompile Include="marnav\nmea\rsa.cpp" />
+    <ClCompile Include="marnav\nmea\rsd.cpp" />
+    <ClCompile Include="marnav\nmea\rte.cpp" />
+    <ClCompile Include="marnav\nmea\sentence.cpp" />
+    <ClCompile Include="marnav\nmea\sfi.cpp" />
+    <ClCompile Include="marnav\nmea\split.cpp" />
+    <ClCompile Include="marnav\nmea\stn.cpp" />
+    <ClCompile Include="marnav\nmea\string.cpp" />
+    <ClCompile Include="marnav\nmea\tag_block.cpp" />
+    <ClCompile Include="marnav\nmea\talker_id.cpp" />
+    <ClCompile Include="marnav\nmea\tds.cpp" />
+    <ClCompile Include="marnav\nmea\tfi.cpp" />
+    <ClCompile Include="marnav\nmea\time.cpp" />
+    <ClCompile Include="marnav\nmea\tll.cpp" />
+    <ClCompile Include="marnav\nmea\tpc.cpp" />
+    <ClCompile Include="marnav\nmea\tpr.cpp" />
+    <ClCompile Include="marnav\nmea\tpt.cpp" />
+    <ClCompile Include="marnav\nmea\ttm.cpp" />
+    <ClCompile Include="marnav\nmea\vbw.cpp" />
+    <ClCompile Include="marnav\nmea\vdm.cpp" />
+    <ClCompile Include="marnav\nmea\vdo.cpp" />
+    <ClCompile Include="marnav\nmea\vdr.cpp" />
+    <ClCompile Include="marnav\nmea\vhw.cpp" />
+    <ClCompile Include="marnav\nmea\vlw.cpp" />
+    <ClCompile Include="marnav\nmea\vpw.cpp" />
+    <ClCompile Include="marnav\nmea\vtg.cpp" />
+    <ClCompile Include="marnav\nmea\vwr.cpp" />
+    <ClCompile Include="marnav\nmea\waypoint.cpp" />
+    <ClCompile Include="marnav\nmea\wcv.cpp" />
+    <ClCompile Include="marnav\nmea\wnc.cpp" />
+    <ClCompile Include="marnav\nmea\wpl.cpp" />
+    <ClCompile Include="marnav\nmea\xdr.cpp" />
+    <ClCompile Include="marnav\nmea\xte.cpp" />
+    <ClCompile Include="marnav\nmea\xtr.cpp" />
+    <ClCompile Include="marnav\nmea\zda.cpp" />
+    <ClCompile Include="marnav\nmea\zdl.cpp" />
+    <ClCompile Include="marnav\nmea\zfo.cpp" />
+    <ClCompile Include="marnav\nmea\ztg.cpp" />
+    <ClCompile Include="marnav\seatalk\message.cpp" />
+    <ClCompile Include="marnav\seatalk\message_00.cpp" />
+    <ClCompile Include="marnav\seatalk\seatalk_message_01.cpp" />
+    <ClCompile Include="marnav\seatalk\seatalk_message_05.cpp" />
+    <ClCompile Include="marnav\seatalk\seatalk_message_10.cpp" />
+    <ClCompile Include="marnav\seatalk\seatalk_message_11.cpp" />
+    <ClCompile Include="marnav\seatalk\seatalk_message_20.cpp" />
+    <ClCompile Include="marnav\seatalk\seatalk_message_21.cpp" />
+    <ClCompile Include="marnav\seatalk\seatalk_message_22.cpp" />
+    <ClCompile Include="marnav\seatalk\seatalk_message_23.cpp" />
+    <ClCompile Include="marnav\seatalk\seatalk_message_24.cpp" />
+    <ClCompile Include="marnav\seatalk\message_25.cpp" />
+    <ClCompile Include="marnav\seatalk\message_26.cpp" />
+    <ClCompile Include="marnav\seatalk\message_27.cpp" />
+    <ClCompile Include="marnav\seatalk\message_30.cpp" />
+    <ClCompile Include="marnav\seatalk\message_36.cpp" />
+    <ClCompile Include="marnav\seatalk\message_38.cpp" />
+    <ClCompile Include="marnav\seatalk\message_50.cpp" />
+    <ClCompile Include="marnav\seatalk\message_51.cpp" />
+    <ClCompile Include="marnav\seatalk\message_52.cpp" />
+    <ClCompile Include="marnav\seatalk\message_53.cpp" />
+    <ClCompile Include="marnav\seatalk\message_54.cpp" />
+    <ClCompile Include="marnav\seatalk\message_56.cpp" />
+    <ClCompile Include="marnav\seatalk\message_58.cpp" />
+    <ClCompile Include="marnav\seatalk\message_59.cpp" />
+    <ClCompile Include="marnav\seatalk\message_65.cpp" />
+    <ClCompile Include="marnav\seatalk\message_66.cpp" />
+    <ClCompile Include="marnav\seatalk\message_6c.cpp" />
+    <ClCompile Include="marnav\seatalk\message_86.cpp" />
+    <ClCompile Include="marnav\seatalk\message_87.cpp" />
+    <ClCompile Include="marnav\seatalk\message_89.cpp" />
+    <ClCompile Include="marnav\seatalk\seatalk.cpp" />
+    <ClCompile Include="marnav\utils\mmsi.cpp" />
+    <ClCompile Include="marnav\utils\mmsi_country.cpp" />
+    <ClCompile Include="nmeasum.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="marnav\ais\ais.hpp" />
+    <ClInclude Include="marnav\ais\angle.hpp" />
+    <ClInclude Include="marnav\ais\binary_001_11.hpp" />
+    <ClInclude Include="marnav\ais\binary_200_10.hpp" />
+    <ClInclude Include="marnav\ais\binary_data.hpp" />
+    <ClInclude Include="marnav\ais\message.hpp" />
+    <ClInclude Include="marnav\ais\message_01.hpp" />
+    <ClInclude Include="marnav\ais\message_02.hpp" />
+    <ClInclude Include="marnav\ais\message_03.hpp" />
+    <ClInclude Include="marnav\ais\message_04.hpp" />
+    <ClInclude Include="marnav\ais\message_05.hpp" />
+    <ClInclude Include="marnav\ais\message_06.hpp" />
+    <ClInclude Include="marnav\ais\message_07.hpp" />
+    <ClInclude Include="marnav\ais\message_08.hpp" />
+    <ClInclude Include="marnav\ais\message_09.hpp" />
+    <ClInclude Include="marnav\ais\message_10.hpp" />
+    <ClInclude Include="marnav\ais\message_11.hpp" />
+    <ClInclude Include="marnav\ais\message_12.hpp" />
+    <ClInclude Include="marnav\ais\message_13.hpp" />
+    <ClInclude Include="marnav\ais\message_14.hpp" />
+    <ClInclude Include="marnav\ais\message_17.hpp" />
+    <ClInclude Include="marnav\ais\message_18.hpp" />
+    <ClInclude Include="marnav\ais\message_19.hpp" />
+    <ClInclude Include="marnav\ais\message_20.hpp" />
+    <ClInclude Include="marnav\ais\message_21.hpp" />
+    <ClInclude Include="marnav\ais\message_22.hpp" />
+    <ClInclude Include="marnav\ais\message_23.hpp" />
+    <ClInclude Include="marnav\ais\message_24.hpp" />
+    <ClInclude Include="marnav\ais\name.hpp" />
+    <ClInclude Include="marnav\geo\angle.hpp" />
+    <ClInclude Include="marnav\geo\cpa.hpp" />
+    <ClInclude Include="marnav\geo\geodesic.hpp" />
+    <ClInclude Include="marnav\geo\position.hpp" />
+    <ClInclude Include="marnav\geo\region.hpp" />
+    <ClInclude Include="marnav\io\default_nmea_reader.hpp" />
+    <ClInclude Include="marnav\io\default_nmea_serial.hpp" />
+    <ClInclude Include="marnav\io\default_seatalk_reader.hpp" />
+    <ClInclude Include="marnav\io\default_seatalk_serial.hpp" />
+    <ClInclude Include="marnav\io\device.hpp" />
+    <ClInclude Include="marnav\io\nmea_reader.hpp" />
+    <ClInclude Include="marnav\io\seatalk_reader.hpp" />
+    <ClInclude Include="marnav\io\selectable.hpp" />
+    <ClInclude Include="marnav\io\serial.hpp" />
+    <ClInclude Include="marnav\math\floatingpoint.hpp" />
+    <ClInclude Include="marnav\math\matrix.hpp" />
+    <ClInclude Include="marnav\math\quaternion.hpp" />
+    <ClInclude Include="marnav\math\vector.hpp" />
+    <ClInclude Include="marnav\nmea\aam.hpp" />
+    <ClInclude Include="marnav\nmea\ais_helper.hpp" />
+    <ClInclude Include="marnav\nmea\alm.hpp" />
+    <ClInclude Include="marnav\nmea\angle.hpp" />
+    <ClInclude Include="marnav\nmea\apa.hpp" />
+    <ClInclude Include="marnav\nmea\apb.hpp" />
+    <ClInclude Include="marnav\nmea\bod.hpp" />
+    <ClInclude Include="marnav\nmea\bwc.hpp" />
+    <ClInclude Include="marnav\nmea\bwr.hpp" />
+    <ClInclude Include="marnav\nmea\bww.hpp" />
+    <ClInclude Include="marnav\nmea\checks.hpp" />
+    <ClInclude Include="marnav\nmea\checksum.hpp" />
+    <ClInclude Include="marnav\nmea\checksum_enum.hpp" />
+    <ClInclude Include="marnav\nmea\constants.hpp" />
+    <ClInclude Include="marnav\nmea\convert.hpp" />
+    <ClInclude Include="marnav\nmea\date.hpp" />
+    <ClInclude Include="marnav\nmea\dbk.hpp" />
+    <ClInclude Include="marnav\nmea\dbt.hpp" />
+    <ClInclude Include="marnav\nmea\detail.hpp" />
+    <ClInclude Include="marnav\nmea\dpt.hpp" />
+    <ClInclude Include="marnav\nmea\dsc.hpp" />
+    <ClInclude Include="marnav\nmea\dse.hpp" />
+    <ClInclude Include="marnav\nmea\dtm.hpp" />
+    <ClInclude Include="marnav\nmea\fsi.hpp" />
+    <ClInclude Include="marnav\nmea\gbs.hpp" />
+    <ClInclude Include="marnav\nmea\gga.hpp" />
+    <ClInclude Include="marnav\nmea\glc.hpp" />
+    <ClInclude Include="marnav\nmea\gll.hpp" />
+    <ClInclude Include="marnav\nmea\gns.hpp" />
+    <ClInclude Include="marnav\nmea\grs.hpp" />
+    <ClInclude Include="marnav\nmea\gsa.hpp" />
+    <ClInclude Include="marnav\nmea\gst.hpp" />
+    <ClInclude Include="marnav\nmea\gsv.hpp" />
+    <ClInclude Include="marnav\nmea\gtd.hpp" />
+    <ClInclude Include="marnav\nmea\hdg.hpp" />
+    <ClInclude Include="marnav\nmea\hdm.hpp" />
+    <ClInclude Include="marnav\nmea\hdt.hpp" />
+    <ClInclude Include="marnav\nmea\hfb.hpp" />
+    <ClInclude Include="marnav\nmea\hsc.hpp" />
+    <ClInclude Include="marnav\nmea\io.hpp" />
+    <ClInclude Include="marnav\nmea\its.hpp" />
+    <ClInclude Include="marnav\nmea\lcd.hpp" />
+    <ClInclude Include="marnav\nmea\manufacturer.hpp" />
+    <ClInclude Include="marnav\nmea\msk.hpp" />
+    <ClInclude Include="marnav\nmea\mss.hpp" />
+    <ClInclude Include="marnav\nmea\mtw.hpp" />
+    <ClInclude Include="marnav\nmea\mwd.hpp" />
+    <ClInclude Include="marnav\nmea\mwv.hpp" />
+    <ClInclude Include="marnav\nmea\name.hpp" />
+    <ClInclude Include="marnav\nmea\nmea.hpp" />
+    <ClInclude Include="marnav\nmea\osd.hpp" />
+    <ClInclude Include="marnav\nmea\pgrme.hpp" />
+    <ClInclude Include="marnav\nmea\pgrmm.hpp" />
+    <ClInclude Include="marnav\nmea\pgrmz.hpp" />
+    <ClInclude Include="marnav\nmea\r00.hpp" />
+    <ClInclude Include="marnav\nmea\rma.hpp" />
+    <ClInclude Include="marnav\nmea\rmb.hpp" />
+    <ClInclude Include="marnav\nmea\rmc.hpp" />
+    <ClInclude Include="marnav\nmea\rot.hpp" />
+    <ClInclude Include="marnav\nmea\rpm.hpp" />
+    <ClInclude Include="marnav\nmea\rsa.hpp" />
+    <ClInclude Include="marnav\nmea\rsd.hpp" />
+    <ClInclude Include="marnav\nmea\rte.hpp" />
+    <ClInclude Include="marnav\nmea\sentence.hpp" />
+    <ClInclude Include="marnav\nmea\sentence_id.hpp" />
+    <ClInclude Include="marnav\nmea\sfi.hpp" />
+    <ClInclude Include="marnav\nmea\split.hpp" />
+    <ClInclude Include="marnav\nmea\stn.hpp" />
+    <ClInclude Include="marnav\nmea\string.hpp" />
+    <ClInclude Include="marnav\nmea\tag_block.hpp" />
+    <ClInclude Include="marnav\nmea\talker_id.hpp" />
+    <ClInclude Include="marnav\nmea\tds.hpp" />
+    <ClInclude Include="marnav\nmea\tfi.hpp" />
+    <ClInclude Include="marnav\nmea\time.hpp" />
+    <ClInclude Include="marnav\nmea\tll.hpp" />
+    <ClInclude Include="marnav\nmea\tpc.hpp" />
+    <ClInclude Include="marnav\nmea\tpr.hpp" />
+    <ClInclude Include="marnav\nmea\tpt.hpp" />
+    <ClInclude Include="marnav\nmea\ttm.hpp" />
+    <ClInclude Include="marnav\nmea\vbw.hpp" />
+    <ClInclude Include="marnav\nmea\vdm.hpp" />
+    <ClInclude Include="marnav\nmea\vdo.hpp" />
+    <ClInclude Include="marnav\nmea\vdr.hpp" />
+    <ClInclude Include="marnav\nmea\vhw.hpp" />
+    <ClInclude Include="marnav\nmea\vlw.hpp" />
+    <ClInclude Include="marnav\nmea\vpw.hpp" />
+    <ClInclude Include="marnav\nmea\vtg.hpp" />
+    <ClInclude Include="marnav\nmea\vwr.hpp" />
+    <ClInclude Include="marnav\nmea\waypoint.hpp" />
+    <ClInclude Include="marnav\nmea\wcv.hpp" />
+    <ClInclude Include="marnav\nmea\wnc.hpp" />
+    <ClInclude Include="marnav\nmea\wpl.hpp" />
+    <ClInclude Include="marnav\nmea\xdr.hpp" />
+    <ClInclude Include="marnav\nmea\xte.hpp" />
+    <ClInclude Include="marnav\nmea\xtr.hpp" />
+    <ClInclude Include="marnav\nmea\zda.hpp" />
+    <ClInclude Include="marnav\nmea\zdl.hpp" />
+    <ClInclude Include="marnav\nmea\zfo.hpp" />
+    <ClInclude Include="marnav\nmea\ztg.hpp" />
+    <ClInclude Include="marnav\seatalk\equipment.hpp" />
+    <ClInclude Include="marnav\seatalk\key.hpp" />
+    <ClInclude Include="marnav\seatalk\message.hpp" />
+    <ClInclude Include="marnav\seatalk\message_00.hpp" />
+    <ClInclude Include="marnav\seatalk\message_01.hpp" />
+    <ClInclude Include="marnav\seatalk\message_05.hpp" />
+    <ClInclude Include="marnav\seatalk\message_10.hpp" />
+    <ClInclude Include="marnav\seatalk\message_11.hpp" />
+    <ClInclude Include="marnav\seatalk\message_20.hpp" />
+    <ClInclude Include="marnav\seatalk\message_21.hpp" />
+    <ClInclude Include="marnav\seatalk\message_22.hpp" />
+    <ClInclude Include="marnav\seatalk\message_23.hpp" />
+    <ClInclude Include="marnav\seatalk\message_24.hpp" />
+    <ClInclude Include="marnav\seatalk\message_25.hpp" />
+    <ClInclude Include="marnav\seatalk\message_26.hpp" />
+    <ClInclude Include="marnav\seatalk\message_27.hpp" />
+    <ClInclude Include="marnav\seatalk\message_30.hpp" />
+    <ClInclude Include="marnav\seatalk\message_36.hpp" />
+    <ClInclude Include="marnav\seatalk\message_38.hpp" />
+    <ClInclude Include="marnav\seatalk\message_50.hpp" />
+    <ClInclude Include="marnav\seatalk\message_51.hpp" />
+    <ClInclude Include="marnav\seatalk\message_52.hpp" />
+    <ClInclude Include="marnav\seatalk\message_53.hpp" />
+    <ClInclude Include="marnav\seatalk\message_54.hpp" />
+    <ClInclude Include="marnav\seatalk\message_56.hpp" />
+    <ClInclude Include="marnav\seatalk\message_58.hpp" />
+    <ClInclude Include="marnav\seatalk\message_59.hpp" />
+    <ClInclude Include="marnav\seatalk\message_65.hpp" />
+    <ClInclude Include="marnav\seatalk\message_66.hpp" />
+    <ClInclude Include="marnav\seatalk\message_6c.hpp" />
+    <ClInclude Include="marnav\seatalk\message_86.hpp" />
+    <ClInclude Include="marnav\seatalk\message_87.hpp" />
+    <ClInclude Include="marnav\seatalk\message_89.hpp" />
+    <ClInclude Include="marnav\seatalk\seatalk.hpp" />
+    <ClInclude Include="marnav\utils\bitset.hpp" />
+    <ClInclude Include="marnav\utils\bitset_string.hpp" />
+    <ClInclude Include="marnav\utils\mmsi.hpp" />
+    <ClInclude Include="marnav\utils\mmsi_country.hpp" />
+    <ClInclude Include="marnav\utils\optional.hpp" />
+    <ClInclude Include="marnav\utils\unique.hpp" />
+    <ClInclude Include="marnav\utils\unused.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

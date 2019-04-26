@@ -2,8 +2,8 @@
 #define MARNAV__NMEA__RSD__HPP
 
 #include <array>
-#include <marnav/nmea/sentence.hpp>
-#include <marnav/utils/optional.hpp>
+#include "sentence.hpp"
+#include "../utils/optional.hpp"
 
 namespace marnav
 {

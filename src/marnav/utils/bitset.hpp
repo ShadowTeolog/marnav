@@ -144,12 +144,12 @@ public:
 
 		const_iterator operator+(size_type n) const noexcept
 		{
-			return const_iterator{*this} += n;
+			return const_iterator(*this) += n;
 		}
 
 		const_iterator operator-(size_type n) const noexcept
 		{
-			return const_iterator{*this} -= n;
+			return const_iterator(*this) -= n;
 		}
 
 		const_iterator & operator+=(size_type ofs)

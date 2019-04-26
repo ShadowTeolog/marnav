@@ -3,7 +3,7 @@
 
 #include <chrono>
 #include <tuple>
-#include <marnav/geo/position.hpp>
+#include "position.hpp"
 
 namespace marnav
 {

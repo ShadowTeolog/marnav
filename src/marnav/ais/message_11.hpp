@@ -1,8 +1,8 @@
 #ifndef MARNAV__AIS__MESSAGE_11__HPP
 #define MARNAV__AIS__MESSAGE_11__HPP
 
-#include <marnav/ais/message_04.hpp>
-#include <marnav/geo/angle.hpp>
+#include "message_04.hpp"
+#include "../geo/angle.hpp"
 
 namespace marnav
 {

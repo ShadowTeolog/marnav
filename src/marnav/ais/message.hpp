@@ -3,7 +3,7 @@
 
 #include <memory>
 #include <string>
-#include <marnav/ais/binary_data.hpp>
+#include "binary_data.hpp"
 
 namespace marnav
 {

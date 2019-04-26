@@ -2,3 +2,10 @@ build
 .ycm_extra_conf.pyc
 tmp
 .gdbinit
+src/.vs
+src/Release
+src/Debug
+src/marnav.VC.db
+*.filters
+*.user
+src/marnav/.vs

@@ -6,10 +6,10 @@
 #include <string>
 #include <type_traits>
 #include <vector>
-#include <marnav/nmea/constants.hpp>
-#include <marnav/nmea/talker_id.hpp>
-#include <marnav/nmea/sentence_id.hpp>
-#include <marnav/nmea/detail.hpp>
+#include "constants.hpp"
+#include "talker_id.hpp"
+#include "sentence_id.hpp"
+#include "detail.hpp" 
 
 namespace marnav
 {

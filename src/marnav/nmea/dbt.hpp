@@ -1,8 +1,8 @@
 #ifndef MARNAV__NMEA__DBT__HPP
 #define MARNAV__NMEA__DBT__HPP
 
-#include <marnav/nmea/sentence.hpp>
-#include <marnav/utils/optional.hpp>
+#include "sentence.hpp"
+#include "../utils/optional.hpp"
 
 namespace marnav
 {

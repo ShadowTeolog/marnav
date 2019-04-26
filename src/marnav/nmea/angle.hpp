@@ -2,7 +2,7 @@
 #define MARNAV__NMEA__ANGLE__HPP
 
 #include <string>
-#include <marnav/geo/angle.hpp>
+#include "../geo/angle.hpp"
 
 namespace marnav
 {

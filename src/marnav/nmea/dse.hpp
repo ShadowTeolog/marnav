@@ -1,9 +1,9 @@
 #ifndef MARNAV__NMEA__DSE__HPP
 #define MARNAV__NMEA__DSE__HPP
 
-#include <marnav/nmea/sentence.hpp>
-#include <marnav/utils/optional.hpp>
-#include <marnav/utils/mmsi.hpp>
+#include "sentence.hpp"
+#include "../utils/optional.hpp"
+#include "../utils/mmsi.hpp"
 
 namespace marnav
 {

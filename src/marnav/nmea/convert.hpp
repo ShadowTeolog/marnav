@@ -1,9 +1,9 @@
 #ifndef MARNAV__NMEA__CONVERT__HPP
 #define MARNAV__NMEA__CONVERT__HPP
 
-#include <marnav/nmea/constants.hpp>
-#include <marnav/geo/angle.hpp>
-#include <marnav/utils/optional.hpp>
+#include "constants.hpp"
+#include "../geo/angle.hpp"
+#include "../utils/optional.hpp"
 
 namespace marnav
 {

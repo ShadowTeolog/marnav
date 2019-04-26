@@ -1,9 +1,9 @@
 #ifndef MARNAV__AIS__BINARY_001_11__HPP
 #define MARNAV__AIS__BINARY_001_11__HPP
 
-#include <marnav/ais/binary_data.hpp>
-#include <marnav/geo/position.hpp>
-#include <marnav/utils/optional.hpp>
+#include "binary_data.hpp"
+#include "../geo/position.hpp"
+#include "../utils/optional.hpp"
 
 namespace marnav
 {

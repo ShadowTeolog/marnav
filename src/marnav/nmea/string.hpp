@@ -2,8 +2,8 @@
 #define MARNAV__NMEA__STRING__HPP
 
 #include <string>
-#include <marnav/nmea/constants.hpp>
-#include <marnav/utils/optional.hpp>
+#include "constants.hpp"
+#include "../utils/optional.hpp"
 
 namespace marnav
 {

@@ -2,9 +2,9 @@
 #define MARNAV__NMEA__R00__HPP
 
 #include <array>
-#include <marnav/nmea/sentence.hpp>
-#include <marnav/nmea/waypoint.hpp>
-#include <marnav/utils/optional.hpp>
+#include "sentence.hpp"
+#include "waypoint.hpp"
+#include "../utils/optional.hpp"
 
 namespace marnav
 {

@@ -4,8 +4,8 @@
 #include <memory>
 #include <string>
 #include <vector>
-#include <marnav/nmea/sentence_id.hpp>
-#include <marnav/nmea/checksum_enum.hpp>
+#include "sentence_id.hpp"
+#include "checksum_enum.hpp"
 
 namespace marnav
 {

@@ -1,7 +1,7 @@
 #ifndef MARNAV__NMEA__VDO__HPP
 #define MARNAV__NMEA__VDO__HPP
 
-#include <marnav/nmea/vdm.hpp>
+#include "vdm.hpp"
 
 namespace marnav
 {

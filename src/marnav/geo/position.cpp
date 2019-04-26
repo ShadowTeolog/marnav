@@ -2,6 +2,7 @@
 #include <cmath>
 #include "position.hpp"
 
+
 namespace marnav
 {
 namespace geo

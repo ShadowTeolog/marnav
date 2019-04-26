@@ -1,7 +1,7 @@
 #ifndef MARNAV__IO__DEFAULT_NMEA_READER__HPP
 #define MARNAV__IO__DEFAULT_NMEA_READER__HPP
 
-#include <marnav/io/nmea_reader.hpp>
+#include "nmea_reader.hpp"
 
 namespace marnav
 {

@@ -108,7 +108,7 @@ struct entry {
 	const char * TAG;
 	const sentence_id ID;
 	const sentence::parse_function parse;
-};
+	};
 static const std::vector<entry> known_sentences = {
 	// regular
 	REGISTER_SENTENCE(aam), REGISTER_SENTENCE(alm), REGISTER_SENTENCE(apa),

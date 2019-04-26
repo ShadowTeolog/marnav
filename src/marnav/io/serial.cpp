@@ -3,8 +3,9 @@
 #include <cstdio>
 #include <cstring>
 #include <fcntl.h>
-#include <termios.h>
-#include <unistd.h>
+//#include <termios.h>
+#include <io.h>
+//#include <unistd.h>
 
 namespace marnav
 {
@@ -14,6 +15,7 @@ namespace io
 /// @cond DEV
 namespace detail
 {
+	/*
 static tcflag_t get_baud(serial::baud baud_rate)
 {
 	switch (baud_rate) {
@@ -44,7 +46,7 @@ static tcflag_t get_baud(serial::baud baud_rate)
 	};
 	return B0;
 }
-
+	
 static tcflag_t get_data_bits(serial::databits data_bits)
 {
 	switch (data_bits) {
@@ -104,6 +106,7 @@ static tcflag_t get_parity_iflag(serial::parity par)
 	}
 	return 0;
 }
+*/
 }
 /// @endcond
 
@@ -125,6 +128,7 @@ serial::serial(const std::string & dv, baud b, databits d, stopbits s, parity p)
 /// Opens a serial device.
 void serial::open()
 {
+	/*
 	termios old_tio;
 	termios new_tio;
 
@@ -150,7 +154,7 @@ void serial::open()
 	new_tio.c_cc[VTIME] = 0;
 
 	tcflush(fd, TCIFLUSH);
-	tcsetattr(fd, TCSANOW, &new_tio);
+	tcsetattr(fd, TCSANOW, &new_tio);*/
 }
 
 /// Closes the device, specified by the device handling structure.
@@ -158,7 +162,7 @@ void serial::close()
 {
 	if (fd < 0)
 		return;
-	::close(fd);
+	::_close(fd);
 	fd = -1;
 }
 
@@ -176,7 +180,7 @@ int serial::read(char * buffer, uint32_t size)
 		throw std::invalid_argument{"invalid buffer or size"};
 	if (fd < 0)
 		throw std::runtime_error{"device not open"};
-	return ::read(fd, buffer, size);
+	return ::_read(fd, buffer, size);
 }
 
 /// Writes the speicified buffer to the serial line.
@@ -192,7 +196,7 @@ int serial::write(const char * buffer, uint32_t size)
 		throw std::invalid_argument{"invalid buffer or size"};
 	if (fd < 0)
 		throw std::runtime_error{"device not open"};
-	return ::write(fd, buffer, size);
+	return ::_write(fd, buffer, size);
 }
 }
 }

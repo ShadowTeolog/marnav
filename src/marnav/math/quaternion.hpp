@@ -1,12 +1,12 @@
 #ifndef MARNAV__MATH__QUATERNION__HPP
 #define MARNAV__MATH__QUATERNION__HPP
-
+#define _USE_MATH_DEFINES
 #include <cmath>
-#include <cassert>
-#include <marnav/math/vector.hpp>
-#include <marnav/math/floatingpoint.hpp>
-#include <marnav/math/constants.hpp>
 
+#include <cassert>
+#include "./vector.hpp"
+#include "./floatingpoint.hpp"
+#include "./constants.hpp"
 namespace marnav
 {
 namespace math

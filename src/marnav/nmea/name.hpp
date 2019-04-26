@@ -2,9 +2,9 @@
 #define MARNAV__NMEA__NAME__HPP
 
 #include <string>
-#include <marnav/nmea/sentence_id.hpp>
-#include <marnav/nmea/constants.hpp>
-#include <marnav/nmea/talker_id.hpp>
+#include "sentence_id.hpp"
+#include "constants.hpp"
+#include "talker_id.hpp"
 
 namespace marnav
 {

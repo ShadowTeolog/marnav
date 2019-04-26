@@ -1,9 +1,9 @@
 #ifndef MARNAV__NMEA__GST__HPP
 #define MARNAV__NMEA__GST__HPP
 
-#include <marnav/nmea/sentence.hpp>
-#include <marnav/nmea/time.hpp>
-#include <marnav/utils/optional.hpp>
+#include "sentence.hpp"
+#include "time.hpp"
+#include "../utils/optional.hpp"
 
 namespace marnav
 {
